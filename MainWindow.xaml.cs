@@ -34,7 +34,7 @@ namespace IpPhone
 
         public void set_local_ip(string ip)
         {
-            ipBlock.Text += ' ' + ip;
+            ipBlock.Text = "本机IP地址 : " + ip;
         }
 
         public void add_client(string ip)
@@ -66,6 +66,7 @@ namespace IpPhone
         private void refreshButton_Click(object sender, RoutedEventArgs e)
         {
             myListBox.Items.Clear();
+            controller.set_local_ip();
             controller.clients_refresh();
         }
 

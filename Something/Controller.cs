@@ -24,7 +24,6 @@ namespace IpPhone.Something
             netWork.server_start();
             netWork.send_broadcast(Command.CLIENT_LADING);
             set_local_ip();
-
         }
 
         public void set_local_ip()
