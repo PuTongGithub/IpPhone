@@ -1,0 +1,15 @@
+C:\Users\28254\Documents\code\IpPhone\IpPhone\bin\Release\IpPhone.exe.config
+C:\Users\28254\Documents\code\IpPhone\IpPhone\bin\Release\IpPhone.exe
+C:\Users\28254\Documents\code\IpPhone\IpPhone\bin\Release\IpPhone.pdb
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\MainWindow.g.cs
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\App.g.cs
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone_MarkupCompile.cache
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone_MarkupCompile.lref
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\MainWindow.baml
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.g.resources
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.Properties.Resources.resources
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.csproj.GenerateResource.Cache
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.csproj.CoreCompileInputs.cache
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.exe
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.pdb
+C:\Users\28254\Documents\code\IpPhone\IpPhone\obj\Release\IpPhone.csprojResolveAssemblyReference.cache

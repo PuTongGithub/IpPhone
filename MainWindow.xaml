@@ -1,0 +1,102 @@
+﻿<Window x:Class="IpPhone.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IpPhone"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="IpPhone" Height="600" Width="1000">
+    <Grid Name="myGrid" ShowGridLines="True">
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="40" />
+            </Style>
+
+            <Style TargetType="ListBoxItem">
+                <Setter Property="FontSize" Value="29" />
+                <Setter Property="Margin" Value="0,5" />
+                <Setter Property="Background" Value="{x:Null}" />
+            </Style>
+        </Grid.Resources>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock HorizontalAlignment="Left" 
+                       FontSize="21"
+                       Margin="10"
+                       VerticalAlignment="Center"
+                       Text="在线联系人列表"
+                       FontWeight="Bold"/>
+
+            <Button HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Background="{x:Null}"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xE1CD;"
+                    FontSize="17"
+                    FontWeight="Bold"
+                    BorderBrush="{x:Null}"
+                    Margin="10"
+                    Name="refreshButton"
+                    Click="refreshButton_Click"/>
+
+            <ListBox Name="myListBox"
+                     Grid.Row="1" 
+                     BorderBrush="{x:Null}" 
+                     Background="{x:Null}"
+                     SelectionChanged="myListBox_SelectionChanged">
+            </ListBox>
+
+        </Grid>
+        
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="statusBlock" Grid.Row="1" >IpPhone</TextBlock>
+            <TextBlock Name="ipBlock" Grid.Row="2">本机IP地址 : </TextBlock>
+
+            <Button Click="callButton_Click" 
+                    Name="callButton"
+                    Grid.Row="3" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="{x:Null}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="30" Margin="5">&#xE717;</TextBlock>
+                    <TextBlock FontSize="33" Margin="5">呼叫</TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Click="beCalledButton_Click" 
+                    Name="beCalledButton"
+                    Grid.Row="3" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="{x:Null}"
+                    Visibility="Hidden">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="30" Margin="5">&#xE717;</TextBlock>
+                    <TextBlock FontSize="33" Margin="5">接听</TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
